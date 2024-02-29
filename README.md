@@ -1,13 +1,35 @@
-# RAG를 활용한 보아즈 Slack봇 - **BOAchat**
+# RAG를 활용한 보아즈 Slack봇 - **BOAchat** (mini_22Analysis) 
+</br>
+
+## Usage
+- [ ] 세션
+- [ ] 컨퍼런스
+- [X] 미니프로젝트
+- [ ] 스터디
+
+<br/>
+
+## Period
+### 24.01.25 ~ 24.02.29
+
+<br/>
+
+## Team
+<p align="center"><img src=https://github.com/BOAZ-bigdata/22_MiniProject_BOAchat/blob/main/docs/BOAchat_members.png width="350" height="150"/>
+ 
+- 팀장: [유하린](https://github.com/halynyu)
+- 팀원: [김이정](https://github.com/shashamalone), [이혜민](https://github.com/hyeminishailey), [전현지](https://github.com/HyunZ118)
+<br/>
+
+----
+<br/>
 
 
 ## 프로젝트 소개 및 목적
  
 RAG(Retrieval Augmented Generation)을 활용하여 BOAZ의 카톡방과 공지 pdf 등을 지식 원본으로 사용하고, 이를 기반으로 LLM(Language Model)을 실행하여 챗봇 형태로 구현하는 것을 목표로 하는 프로젝트입니다.
 
-## 프로젝트 기간
-24.01.25 ~ 24.02.29
-
+<br/>
 
 ## 프로젝트 구현 개요
 ### 1. RAG + Langchain
@@ -41,7 +63,7 @@ RAG(Retrieval Augmented Generation)을 활용하여 BOAZ의 카톡방과 공지 
 - pure vectore database
 - 자체 SaaS 클라우드 -> 정보를 손쉽게 추가, 삭제, 업데이트 가능
 
-
+<br/>
 
 ## Dataset
 <p align="center"><img src=https://github.com/BOAZ-bigdata/22_MiniProject_BOAchat/blob/main/docs/BOAchat_dataset.png width="550" height="350"/>
@@ -68,7 +90,7 @@ RAG(Retrieval Augmented Generation)을 활용하여 BOAZ의 카톡방과 공지 
 
 - 출결/과제 제출 점수 샘플 데이터 구축
 
-
+<br/>
 
 ## 프로젝트 구현
 1. LangChain의 document loaders를 이용해 문서 형성
@@ -77,20 +99,16 @@ RAG(Retrieval Augmented Generation)을 활용하여 BOAZ의 카톡방과 공지 
 4. 챗봇에 질문이 들어왔을 때, 유사도를 판별해 가장 가까운 대답 출력
 5. LLM이 QA chain에 의해 답변 생성
 
+<br/>
+
 ## 추가 개선 사항
+
 ### 1. Prompt Template
 - 원하는 어투의 답변을 받기 위해 prompt template을 사용해봤지만, 눈에 띄는 성능을 보이지 못함
 - 추후 관련성 있고 일관된 언어 기반 출력을 생성하기 위해 적절한 prompt template 개선 및 사용을 목표
+  
 ### 2. 시각화
 - Slack 봇으로 챗봇을 구성하려 하였으나 연결 오류 발생
 - 이번 프로젝트에서는 챗봇 결과를 보다 직관적으로 이해할 수 있도록 Gradio를 활용해 시각화
 - 추후 slack 연결 오류 해결 및 slack 봇을 통한 챗봇 구현이 최종 목표
 
-## Members
-<p align="center"><img src=https://github.com/BOAZ-bigdata/22_MiniProject_BOAchat/blob/main/docs/BOAchat_members.png width="350" height="150"/>
-
-### github link
-- [유하린](https://github.com/halynyu)
-- [김이정](https://github.com/shashamalone)
-- [이혜민](https://github.com/hyeminishailey)
-- [전현지](https://github.com/HyunZ118)
