@@ -59,7 +59,8 @@ RAG(Retrieval Augmented Generation)을 활용하여 BOAZ의 카톡방과 공지 
 
 ### 2. 파인콘(Pynecone)을 이용하여 Vector DB 구축
 <p align="center"><img src=https://github.com/BOAZ-bigdata/22_MiniProject_BOAchat/blob/main/docs/VectorDB.png width="350" height="250"/>
-  
+- DB & Retriever
+  - pineconeDB & cosine similarity retriever
 - pure vectore database
 - 자체 SaaS 클라우드 -> 정보를 손쉽게 추가, 삭제, 업데이트 가능
 
